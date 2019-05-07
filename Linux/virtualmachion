@@ -1,0 +1,6 @@
+升级内核版本之后遇到的各种问题
+
+1.failed selinux 问题
+在启动过程中，选择期望的内核之后按 ‘e’ 键进入 grub 设置页面，在UTF8后加 selinux=0 之后，可以正常启动虚拟机。
+
+2.增强功能光驱挂在不上问题，提示 'unable to access"VBox_GAs_6.0.6" error mounting...  filesystem type iso9660 not configured in kernel'
