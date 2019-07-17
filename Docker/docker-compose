@@ -1,0 +1,5 @@
+docker-compose up
+公司网环境下，该命令出现网络错误，要在 dockerfile 中添加代理，例：
+ENV http_proxy=http://infoprx2:8080
+ENV https_proxy=http://infoprx2:8080
+RUN apt-get update && apt-get install -y curl vim
